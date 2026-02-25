@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiscaliza Cidadã MVP</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Fiscaliza Cidadã</h1>
+      <p>Análise estatística de dados públicos de Portais da Transparência</p>
+    </header>
+
+    <main>
+      <section id="home" class="view active">
+        <h2>Controle social com dados públicos</h2>
+        <p>
+          Este MVP ajuda cidadãos a identificar <strong>indícios estatísticos</strong> em contratos,
+          licitações, fornecedores e salários com base em dados públicos.
+        </p>
+        <button id="startBtn">Analisar Portal da Transparência</button>
+      </section>
+
+      <section id="analysis" class="view">
+        <h2>Nova análise</h2>
+        <label>URL do portal do município</label>
+        <input id="portalUrl" type="url" placeholder="https://..." />
+
+        <fieldset>
+          <legend>Dados para analisar</legend>
+          <label><input type="checkbox" value="contratos" checked /> Contratos</label>
+          <label><input type="checkbox" value="licitacoes" checked /> Licitações</label>
+          <label><input type="checkbox" value="fornecedores" checked /> Fornecedores</label>
+          <label><input type="checkbox" value="salarios" checked /> Salários</label>
+        </fieldset>
+
+        <label>Fallback: upload de CSV/Excel público</label>
+        <input id="files" type="file" multiple accept=".csv,.xls,.xlsx" />
+
+        <button id="runBtn">Rodar análise</button>
+        <p id="status"></p>
+      </section>
+
+      <section id="results" class="view">
+        <h2>Resultados</h2>
+        <p id="summary"></p>
+        <ul id="notes"></ul>
+        <ul id="alerts"></ul>
+
+        <div class="charts">
+          <article>
+            <h3>Ranking de fornecedores (valor total)</h3>
+            <canvas id="supplierChart"></canvas>
+          </article>
+          <article>
+            <h3>Distribuição de salários por cargo (média)</h3>
+            <canvas id="salaryChart"></canvas>
+          </article>
+        </div>
+
+        <p class="disclaimer" id="disclaimer"></p>
+        <div class="actions">
+          <a id="pdfLink" href="#">Exportar relatório em PDF</a>
+          <button id="newBtn">Nova análise</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Aviso legal: este sistema respeita coleta pública permitida e apresenta apenas análise
+        estatística. Não identifica culpa, fraude ou corrupção.
+      </p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

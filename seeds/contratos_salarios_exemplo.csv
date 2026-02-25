@@ -1,0 +1,15 @@
+tipo,valor,data,fornecedor,cnpj,cargo,orgao,objeto,servico
+contrato,98000,2024-01-10,Alfa Limpeza,12345678000100,,,Limpeza de prédios,Limpeza
+contrato,97000,2024-02-11,Alfa Limpeza,12345678000100,,,Limpeza de prédios,Limpeza
+contrato,96500,2024-03-05,Alfa Limpeza,12345678000100,,,Limpeza de prédios,Limpeza
+contrato,250000,2024-01-20,Beta Obras,22345678000199,,,Reforma de escola,Obra
+contrato,260000,2024-02-20,Beta Obras,22345678000199,,,Reforma de escola,Obra
+contrato,900000,2024-04-15,Gama Engenharia,32345678000188,,,Pavimentação urbana,Obra
+salario,3000,2024-01-31,,,Assistente Administrativo,Secretaria de Educação,,
+salario,3200,2024-01-31,,,Assistente Administrativo,Secretaria de Educação,,
+salario,3100,2024-01-31,,,Assistente Administrativo,Secretaria de Educação,,
+salario,5200,2024-01-31,,,Assistente Administrativo,Secretaria de Educação,,
+salario,8000,2024-01-31,,,Analista de TI,Secretaria de Administração,,
+salario,7800,2024-01-31,,,Analista de TI,Secretaria de Administração,,
+salario,7900,2024-01-31,,,Analista de TI,Secretaria de Administração,,
+salario,12000,2024-01-31,,,Analista de TI,Secretaria de Administração,,

@@ -1,0 +1,24 @@
+{
+  "name": "fiscaliza-cidada-mvp",
+  "version": "1.0.0",
+  "description": "MVP de fiscalização cidadã com análise estatística de dados públicos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "lint": "echo 'Sem lint configurado'",
+    "test": "node scripts/run-analysis-check.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "better-sqlite3": "^11.7.0",
+    "cheerio": "^1.0.0",
+    "csv-parse": "^5.6.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.16.0",
+    "robots-parser": "^3.0.1",
+    "xlsx": "^0.18.5"
+  }
+}
