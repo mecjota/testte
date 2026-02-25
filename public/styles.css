@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #102030;
+  background: #f3f7fb;
+}
+body {
+  margin: 0;
+}
+header,
+footer {
+  background: #113355;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+main {
+  max-width: 1024px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.view {
+  display: none;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.view.active {
+  display: block;
+}
+input[type='url'],
+input[type='file'] {
+  width: 100%;
+  margin: 0.4rem 0 1rem;
+}
+fieldset {
+  border: 1px solid #dce7f2;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  margin: 0.3rem 0;
+}
+button,
+a {
+  background: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.disclaimer {
+  background: #fff6e6;
+  border-left: 4px solid #f0ad00;
+  padding: 0.8rem;
+}
+.charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 880px) {
+  .charts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
